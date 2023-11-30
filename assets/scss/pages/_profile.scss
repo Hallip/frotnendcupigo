@@ -1,0 +1,234 @@
+// PROFILE  ===
+.profile-area{
+	.main-profile{
+		display: flex;
+		position: relative;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		flex-direction: column;
+		margin: 0 -15px 20px;
+		padding: 30px 15px;
+		background-color: var(--bg-white);
+		box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.20);
+		.about-profile{
+			display: flex;
+			align-items: center;
+			gap: 40px;
+			.media{
+				max-width: 145px;
+				position: relative;
+				margin: 0 auto 15px;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				padding: 11px;
+				align-items: center;
+				justify-content: center;
+				display: flex;
+				.data-fill{
+					position: absolute;
+					bottom: -2px;
+					left: 50%;
+					background-color: var(--primary);
+					color: #fff;
+					padding: 6px 10px;
+					font-size: 16px;
+					font-weight: 600;
+					line-height: 1;
+					border-radius: 50px;
+					border: 3px solid var(--bg-white);
+					transform: translateX(-50%);
+					span{
+						display: inline-block;
+					}
+				}
+			}
+			.profile-detail{
+				font-family: var(--font-family-title);
+				.name{
+					margin-bottom: 4px;
+				}
+				.title{
+					font-weight: 600;
+					font-family: var(--font-family-title);
+				}		
+			}
+		}
+		.dz-icon{
+			width: 50px;
+			height: 50px;
+			margin: 0;
+			border-radius: 50%;
+			background-color: var(--rgba-primary-1);
+			padding: 0;
+			i{
+				font-size: 22px;
+				color: inherit;
+			}
+		}
+	}
+}
+
+
+svg{
+	&.radial-progress{
+		height: auto;
+		position: absolute;
+		overflow: visible;
+		height:100%;
+		top:0;
+		transform: rotate(-265deg);
+		width: 100%;
+		.percentage {
+			font-size: 12px;
+			fill: #fff;
+			font-weight: 600;
+			font-family: var(--font-family-title); 
+		}
+		circle {
+			fill: rgba(0, 0, 0, 0);
+			stroke: #fff;
+			stroke-dashoffset: 219.91148575129;
+			stroke-width: 3; 
+			&.incomplete {
+				opacity: 0.3;
+			} 
+			&.complete {
+				stroke-dasharray: 219.91148575129;
+			}
+			.basic-circle {
+				stroke: #003f99 !important; 
+			}
+		}
+		&:nth-of-type(6n+1){
+			circle{
+				stroke: var(--primary);
+				stroke-linecap: round; 
+			}
+		}
+	}     
+}
+
+// Profile > Edit Profile ===
+.offcanvas{
+	.offcanvas-body{
+		.search-input{
+			.input-group-text,
+			.form-control{
+				height: 40px;
+				background-color: var(--rgba-primary-1) !important;
+				border-radius: var(--border-radius-md);
+			}
+		}
+	}
+}
+
+// Profile > Subscription ===
+.subscription-swiper{
+	margin: 0 -15px;
+	padding: 0 15px;
+	.swiper-slide{
+		text-align: center;
+		.btn{
+			background-color: var(--bg-white);
+			color: var(--primary);
+			padding: 6px 16px;
+			box-shadow: var(--box-shadow);
+			font-size: 14px;
+		}
+	}
+}
+
+.dz-subscribe-area{
+	.subscribe-area-top{
+		.subscription-swiper2{
+			margin:0 -15px;
+			padding: 0 15px;
+		}
+		.subscribe-box{
+			background: var(--gradient1);
+			height: 80px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: var(--border-radius);
+			gap: 10px;
+			.title{
+				color: #fff;
+				margin-bottom: 0;
+				font-weight: 700;
+				font-family: var(--font-family-base);
+			}
+			img{				
+				max-width: 135px;
+			}
+			.badge{
+				background-color: #fff;
+				color: #fff;
+				font-size: 14px;
+				font-weight: 700;
+				padding: 6px 10px 4px;
+				border-radius: 20px;
+			}
+			&.plus{
+				background: var(--gradient1);		
+				box-shadow: 0px 5px 14px 0px rgba(238, 76, 123, 0.35);	
+				.badge{
+					color: #fb7c67;					
+				}
+			}
+			&.gold{
+				background: var(--gradient2);	
+				box-shadow: 0px 5px 15px 0px rgba(231, 158, 69, 0.40);
+				.badge{
+					color: #DFA14D;					
+				}
+			}
+			&.platinum{
+				background: var(--gradient3);		
+				box-shadow: 0px 5px 14px 0px rgba(10, 11, 14, 0.35);
+				.badge{
+					color: #090A0C;					
+				}
+			}
+		}
+	}
+	.subscribe-content{
+		&.plus{
+			--btn-gradient: var(--gradient1);
+			--btn-shadow: 0px 5px 14px 0px rgba(238, 76, 123, 0.35);
+		}
+		&.gold{
+			--btn-gradient: var(--gradient2);
+			--btn-shadow: 0px 5px 15px 0px rgba(231, 158, 69, 0.40);
+		}
+		&.platinum{
+			--btn-gradient: var(--gradient3);
+			--btn-shadow: 0px 5px 14px 0px rgba(10, 11, 14, 0.35);
+		}
+	}
+}
+
+
+.pricing-data{
+	li{
+		display: flex;
+		align-items: center; 
+		padding: 10px 0;
+		color: var(--title);
+		font-weight: 600;
+		font-size: 16px;
+		i{
+			font-size: 20px;
+			margin-right: 10px;
+		}
+		&.list-false{
+			opacity: 0.5;
+		}
+		&.list-true{
+			opacity: 1;
+		}
+	}
+}

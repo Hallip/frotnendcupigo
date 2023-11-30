@@ -1,0 +1,61 @@
+//login ====	
+.account-area{
+	.section-head{
+		padding: 20px;
+		h2{
+			margin-bottom: 5px;	
+		}
+	}
+	.back-btn{
+		width: 48px;
+		min-width: 48px;
+		height: 48px;
+		background-color: var(--rgba-primary-1);
+		border-radius: 50%;
+		text-align: center;
+		color: var(--title);
+		font-size: 28px;
+	}
+	form{
+        display: flex;
+        flex-direction: column;
+        
+		.saprate{
+            display: flex;
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.input-group > .form-control:focus, .input-group > .form-select:focus{
+    z-index: unset;
+}
+.digit-group {
+	display: flex;
+	flex-direction: initial;
+	margin-bottom: 20px;
+	justify-content: center;
+	input {
+		margin: 0 8px;
+		text-align: center;
+		font-size: 18px;
+		color: var(--dark);
+		padding: 0;
+		width: 50px;
+		height: 50px;
+	}
+	&.input-mini{
+		.form-control{
+			border-bottom-width: 2px;
+		}	
+	}
+}
+
+/* DEFULT CSS CLASS */
+.dz-flex-box{
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center!important;
+}
